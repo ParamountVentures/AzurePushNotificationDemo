@@ -29,7 +29,7 @@
 		- Package Name MUST be the "Name" attribute of your application identity you got in the store in the step above.
 	- Change the "Solution Platforms" dropdown to "Windows Phone (Universal)" and Build the project. This will add "Windows" as a platform.
 	- Open the config.xml in a text editor and find the section "vs:platformSpecificValues". Add "vs:publisherId" as a child element of "vs:platformSpecificWidget" and set this to the "Publisher" attribute of your application identity you got in the store in the step above (include the "CN=" text).
-	- Add an element as follows: <preference name="WindowsToastCapable" value="true" />
+	- Add an element as follows: &lt;preference name="WindowsToastCapable" value="true" />
 - Close config.xml and click on it again to open the visual editor. Change to "Plugins", click "Custom" and check the "Git" option. Enter the following repository https://github.com/phonegap/phonegap-plugin-push.git and click "Add".
 - Open index.js in the scrips folder and add the following code at the bottom of the onDeviceReady() method:
 
